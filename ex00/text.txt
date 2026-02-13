@@ -1,0 +1,32 @@
+An iterator is an object like a pointer that points to an element inside the container.
+We can use iterators to move through the contents of the container.
+They can be visualized as something similar to a pointer pointing to some location and we can access the content at that particular location using them.
+
+
+Kur bën return it çfarë po kthen?
+Ti nuk po kthen një numër.
+Ti nuk po kthen një pointer normal.
+--
+Iteratori është një pozicion brenda container-it.
+
+--
+T& container,{
+	T është vetë container-i.
+	Pra mund të jetë:
+	vector<int>
+	list<int>
+	deque<int>
+	array<int, N>
+	--
+	iteratori është një tip i brendshëm i container-it.
+	iteratori i përket container-it.
+}
+typename T::iterator(tipi iterator që gjendet brenda container-it T.Kjo është tipi i kthimit të funksionit.)
+
+Iteratori = një “pozicion” brenda një container-i (si i në një loop), jo vetë vlera.
+Ai përdoret sepse jo çdo container ka index (list p.sh), prandaj C++ përdor një mënyrë universale për të ecur mbi elementët.
+Çfarë mund të bësh me një iterator
+Shprehja	Kuptimi
+it	ku ndodhesh në container
+*it	vlera që ndodhet aty
+++it	shko te elementi tjetër
