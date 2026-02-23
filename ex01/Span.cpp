@@ -52,9 +52,16 @@ int Span::longestSpan()
 	if(m_v.size() < 2)
 		throw(NotEnoughNumbers());
 	int i = *min_element(m_v.begin(), m_v.end());
-	int j =*max_element(m_v.begin(), m_v.end());
+	int j = *max_element(m_v.begin(), m_v.end());
 	int res = j - i;
 	return res;
 }
 
+void Span::addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end)
+{
+	if(m_v.size() + std::distance(begin, end) > m_N)// we check if the size of the vector plus the distance betwen begin and end
+		throw(AlreadyFull());					 // is smaller than m_N
+	m_v.insert(m_v.end(), begin, end);//Element Shifting, Shifts elements after the insertion point,
+												//thats why we start at the end.
+}
 Span::~Span(){}

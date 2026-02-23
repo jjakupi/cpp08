@@ -19,9 +19,11 @@ class Span
 		Span(const Span& src);
 		Span& operator=(const Span& src);
 		~Span();
+
 		void addNumber(int n);
-		int shortestSpan();
-		int longestSpan();
+		int  shortestSpan();
+		int  longestSpan();
+		void	addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end);
 
 		class AlreadyFull : public std::exception
 		{
@@ -31,6 +33,7 @@ class Span
 				return ("Cointainer its full already");
 			}
 		};
+
 		class NotEnoughNumbers : public std::exception
 		{
 			public :

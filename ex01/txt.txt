@@ -1,0 +1,7 @@
+Vector insert():						vs						|		Vector push_back():
+																|
+-Inserts at any specified position.								|		-Always appends at the end of the vector.
+-Number of Elements	Can insert single or...						|		-Inserts only one element at a time.
+	multiple elements or a range.								|		-Inserts only one element at a time.
+-Element Shifting, Shifts elements after the insertion point.	|		-No shifting of elements (added at the end).
+
