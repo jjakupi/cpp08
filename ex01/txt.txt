@@ -1,7 +1,17 @@
-Vector insert():						vs						|		Vector push_back():
+Vector insert():												vs		Vector push_back():
 																|
 -Inserts at any specified position.								|		-Always appends at the end of the vector.
 -Number of Elements	Can insert single or...						|		-Inserts only one element at a time.
 	multiple elements or a range.								|		-Inserts only one element at a time.
 -Element Shifting, Shifts elements after the insertion point.	|		-No shifting of elements (added at the end).
+
+There are mainly 4 types of containers in C++ STL.
+1.Sequence Containers:Sequence containers implement linear data structures in which the elements can be accessed sequentially.
+					  following are the sequence containers in C++ STL:
+	-Array:Container that wraps over fixed size static array.
+	-Vector:Automatically resizable dynamic array.
+	-Deque:Dynamic array of fixed-size arrays that allows fast insertions and deletions at both ends.
+	-List:Implementation of Doubly Linked List data structure.
+	-Forward List:Implementation of Singly Linked List data structure.
+we dont need the rest.
 

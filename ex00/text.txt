@@ -30,3 +30,43 @@ Shprehja	Kuptimi
 it	ku ndodhesh në container
 *it	vlera që ndodhet aty
 ++it	shko te elementi tjetër
+
+
+Algoritmet nuk “vijnë nga iteratorët”…
+algoritmet PUNOJNE përmes iteratorëve.
+1Containers
+
+Këta bëjnë vetëm një punë:ruajnë të dhënat në memory.
+Shembull:
+vector → array dinamik
+list → linked list
+deque → blloqe memory
+array → fixed array
+
+Ata nuk bëjnë algoritme.
+vector nuk ka:search, sort,replace
+
+Ai vetëm:
+ruan elemente
+jep begin()
+jep end()
+2️⃣ Iteratorët (pjesa kyçe)
+
+Iteratori është ura mes container dhe algoritmit.
+
+Ai i thotë algoritmit:
+
+“Ja si të lëvizësh nga një element tek tjetri pa e ditur si ruhet memory.”
+
+Algoritmi nuk di:
+a është linked list
+a është array
+a është tree
+
+3 Algoritmet
+Algoritmet janë funksione të përgjithshme:std::find, std::sort....
+
+Ata nuk punojnë me vector ose list.
+Ata punojnë me:teratorë
+Pra formula e saktëContainer → jep iteratorë,Iterator → i lejon algoritmit të ecë mbi elementët,
+Algoritmi → bën punën

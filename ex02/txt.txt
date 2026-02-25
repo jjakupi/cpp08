@@ -1,0 +1,40 @@
+std::stack nuk ka iteratorë sepse nuk është container normal — është container adaptor.
+
+1.Container-at realë
+Këta ruajnë të dhëna dhe të lejojnë t’i shëtisësh: vector,list,deque,array,set,map
+Këta kanë:begin(), end(), iterator
+Pra mund të bësh:“ec mbi të gjithë elementët një nga një”.
+
+2.Container adaptorët
+
+Këta fshehin container-in e vërtetë dhe të japin vetëm një mënyrë shumë specifike përdorimi.
+stack, queue, priority_queue
+
+Ata nuk duan që ti të shohësh elementët brenda.
+Pse stack nuk ka iterator?Sepse do të prishte konceptin e stack-ut.
+Stack = LIFO (Last In First Out)
+Ti lejohet vetëm:
+push()   → fut sipër
+pop()    → hiq sipër
+top()    → shiko sipër
+
+
+deque është struktura reale e të dhënave.
+stack është një rregull përdorimi mbi të.
+
+c → container underlying
+dhe në praktikë është:std::deque<T>
+
+Stack nuk ruan të dhëna.
+Container-i i tij i ruan.
+
+iterator i MutantStack është iterator i container-it të brendshëm të stack qe esht deque.
+
+this->c.begin()
+ti po i thua kompilerit:mos kërko c vetëm në MutantStack,kërkoje në objekt (this) → që përfshin edhe klasën prind
+ iterator edhe tip prandaj duheti ja cekim typename para funksionit
+
+Pointer punon vetëm me array.
+Iterator punon me çdo strukturë.
+
+Krijo një tip të quajtur iterator që është iteratori i container-it të brendshëm që përdor std::stack.
