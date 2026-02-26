@@ -51,7 +51,6 @@ int main()
 		std::srand(time(NULL));
 		for (int i = 0; i < 100; i++)
 		{
-
 			int random = rand() % 10000;
 			v1.push_back(random);
 		}

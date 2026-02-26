@@ -9,8 +9,8 @@
 class Span
 {
 	private:
-		unsigned int		m_N;
-		std::vector <int>	m_v;
+		unsigned int		m_N; //hapsira
+		std::vector <int>	m_v; //vectori qe vendosim shifrat
 
 	public:
 

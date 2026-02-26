@@ -2,13 +2,11 @@ An iterator is an object like a pointer that points to an element inside the con
 We can use iterators to move through the contents of the container.
 They can be visualized as something similar to a pointer pointing to some location and we can access the content at that particular location using them.
 
-
 Kur bën return it çfarë po kthen?
 Ti nuk po kthen një numër.
 Ti nuk po kthen një pointer normal.
 --
 Iteratori është një pozicion brenda container-it.
-
 --
 T& container,{
 	T është vetë container-i.
@@ -50,8 +48,7 @@ Ai vetëm:
 ruan elemente
 jep begin()
 jep end()
-2️⃣ Iteratorët (pjesa kyçe)
-
+Iteratorët (pjesa kyçe)
 Iteratori është ura mes container dhe algoritmit.
 
 Ai i thotë algoritmit:

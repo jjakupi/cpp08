@@ -1,17 +1,14 @@
 #include "Span.hpp"
 
-Span::Span() : m_N(0)
-{
-}
+Span::Span() : m_N(0){}
 
-Span::Span(unsigned int N) : m_N(N)
-{
+Span::Span(unsigned int N) : m_N(N){}
 
-}
 Span::Span(const Span& src)
 {
 	*this = src;
 }
+
 Span& Span::operator=(const Span& src)
 {
 	if(this != &src)
@@ -28,6 +25,7 @@ void Span::addNumber(int n)
 		throw(AlreadyFull());
 	m_v.push_back(n);
 }
+
 int Span::shortestSpan()
 {
 	if(m_v.size() < 2)
@@ -47,6 +45,7 @@ int Span::shortestSpan()
 	}
 	return minDiff;
 }
+
 int Span::longestSpan()
 {
 	if(m_v.size() < 2)
@@ -64,4 +63,5 @@ void Span::addNumber(std::vector<int>::iterator begin, std::vector<int>::iterato
 	m_v.insert(m_v.end(), begin, end);//Element Shifting, Shifts elements after the insertion point,
 												//thats why we start at the end.
 }
+
 Span::~Span(){}
